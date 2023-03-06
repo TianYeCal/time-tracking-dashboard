@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Rubik;
+  font-size: 18px;
+  font-weight: 400;
+  color: #333;
+}
+.container {
+  max-width: 360px;
+  margin: 50px auto;
+}
+.box {
+  /* padding: 20px; */
+  border-radius: 12px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.personal-info {
+  background-color: hsl(235, 46%, 20%);
+}
+.profile {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(246, 80%, 60%);
+  padding: 20px;
+  border-radius: 12px;
+}
+.img-box img {
+  height: 70px;
+  width: 100%;
+}
+.headline {
+  color: #939292;
+  margin-bottom: 5px;
+}
+.name {
+  font-size: 24px;
+  color: #d6d5d5;
+}
+.last-hour {
+  color: #939292;
+}
+.frequency {
+  color: #939292;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.backgroundimg-box {
+  padding: 0 10px;
+  display: flex;
+  justify-content: end;
+}
+.backgroundimg-box img {
+  transform: translateY(-15px);
+}
+.box-work {
+  background-color: hsl(15, 100%, 70%);
+}
+.box-play {
+  background-color: hsl(195, 74%, 62%);
+}
+.box-study {
+  background-color: hsl(348, 100%, 68%);
+}
+.box-exercise {
+  background-color: hsl(145, 58%, 55%);
+}
+.box-social {
+  background-color: hsl(264, 64%, 52%);
+}
+.box-selfcare {
+  background-color: hsl(43, 84%, 65%);
+}
+.detail {
+  background-color: hsl(235, 46%, 20%);
+  color: #eee;
+  padding: 40px 20px;
+  border-radius: 12px;
+  /* display: flex;
+  justify-content: space-between; */
+}
+.title {
+  margin-bottom: 10px;
+}
+.hours {
+  font-size: 24px;
+}
+.others {
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+}
+.title-hour {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dot-box {
+  margin-bottom: 10px;
+}
+.daily,
+.weekly,
+.monthly {
+  cursor: pointer;
+}
+.daily:hover,
+.weekly:hover,
+.monthly:hover {
+  color: #fff;
+}
+
+@media (min-width: 600px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .container {
+    max-width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  .personal-info {
+    grid-row: span 2;
+  }
+  .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-bottom: 100px;
+    padding-right: 100px;
+  }
+  .frequency {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+  }
+  .last-hour {
+    font-size: 12px;
+    margin-top: 20px;
+    justify-self: start;
+    align-self: self-start;
+  }
+  .others {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+  }
+  .title-hour {
+    margin-bottom: 30px;
+  }
+  .name {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .backgroundimg-box {
+    height: 100px;
+  }
+  .detail:hover {
+    background-color: hsl(235, 32%, 46%);
+  }
+}

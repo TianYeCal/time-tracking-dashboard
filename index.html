@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="script.js"></script>
+    <title>Frontend Mentor | Time tracking dashboard</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box personal-info">
+        <div class="profile">
+          <div class="img-box">
+            <img src="./images/image-jeremy.png" alt="profile pic" />
+          </div>
+          <div class="info">
+            <p class="headline">Report for</p>
+            <p class="name"><span>Jeremy </span><span>Robson</span></p>
+          </div>
+        </div>
+        <div class="frequency">
+          <p class="daily">Daily</p>
+          <p class="weekly">Weekly</p>
+          <p class="monthly">Monthly</p>
+        </div>
+      </div>
+      <div class="box box-work">
+        <div class="backgroundimg-box work-box">
+          <img src="./images/icon-work.svg" alt="work bgc" />
+        </div>
+        <div class="work-hours detail">
+          <div class="title-hour">
+            <p class="title">Work</p>
+            <div class="dot-box">
+              <img src="./images/icon-ellipsis.svg" alt="..." />
+            </div>
+          </div>
+          <div class="others">
+            <p class="hours"></p>
+            <p class="last-hour"></p>
+          </div>
+        </div>
+      </div>
+      <div class="box box-play">
+        <div class="backgroundimg-box play-box">
+          <img src="./images/icon-play.svg" alt="play bgc" />
+        </div>
+        <div class="play-hours detail">
+          <div class="title-hour">
+            <p class="title">Play</p>
+            <div class="dot-box">
+              <img src="./images/icon-ellipsis.svg" alt="..." />
+            </div>
+          </div>
+          <div class="others">
+            <p class="hours"></p>
+            <p class="last-hour"></p>
+          </div>
+        </div>
+      </div>
+      <div class="box box-study">
+        <div class="backgroundimg-box study-box">
+          <img src="./images/icon-study.svg" alt="study bgc" />
+        </div>
+        <div class="study-hours detail">
+          <div class="title-hour">
+            <p class="title">study</p>
+            <div class="dot-box">
+              <img src="./images/icon-ellipsis.svg" alt="..." />
+            </div>
+          </div>
+          <div class="others">
+            <p class="hours">4hrs</p>
+            <p class="last-hour">
+              <span class="past-time">Last Week</span> -
+              <span class="week-hour">7hours</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="box box-exercise">
+        <div class="backgroundimg-box exercise-box">
+          <img src="/images/icon-exercise.svg" alt="Exercise bgc" />
+        </div>
+        <div class="exercise-hours detail">
+          <div class="title-hour">
+            <p class="title">Exercise</p>
+            <div class="dot-box">
+              <img src="./images/icon-ellipsis.svg" alt="..." />
+            </div>
+          </div>
+          <div class="others">
+            <p class="hours"></p>
+            <p class="last-hour"></p>
+          </div>
+        </div>
+      </div>
+      <div class="box box-social">
+        <div class="backgroundimg-box social-box">
+          <img src="./images/icon-social.svg" alt="social bgc" />
+        </div>
+        <div class="social-hours detail">
+          <div class="title-hour">
+            <p class="title">Social</p>
+            <div class="dot-box">
+              <img src="./images/icon-ellipsis.svg" alt="..." />
+            </div>
+          </div>
+          <div class="others">
+            <p class="hours"></p>
+            <p class="last-hour"></p>
+          </div>
+        </div>
+      </div>
+      <div class="box box-selfcare">
+        <div class="backgroundimg-box selfcare-box">
+          <img src="./images/icon-self-care.svg" alt="play bgc" />
+        </div>
+        <div class="selfcare-hours detail">
+          <div class="title-hour">
+            <p class="title">Self Care</p>
+            <div class="dot-box">
+              <img src="./images/icon-ellipsis.svg" alt="..." />
+            </div>
+          </div>
+          <div class="others">
+            <p class="hours"></p>
+            <p class="last-hour"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+  </body>
+</html>
